@@ -8,4 +8,5 @@ Instructions:
    4. Edit train.cu to include your desired network architecture and parameters.
    5. Compile and run the application.
 
-*Model will be a sequential model. Look at train.cu for an example of how to set up the network architecture.
+*Network will be sequential. Look at train.cu for an example of how to set up the network architecture.
+**If you're looking for a graph based network and/or a python implementation, look for "ANN CUDA Framework Pybind11" in my repositories.
