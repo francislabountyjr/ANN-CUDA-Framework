@@ -91,29 +91,29 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="activation.cu" />
-    <CudaCompile Include="blob.cuh" />
-    <CudaCompile Include="conv2d.cu" />
-    <CudaCompile Include="dense.cu" />
-    <CudaCompile Include="layer.cu" />
-    <CudaCompile Include="loss.cu" />
-    <CudaCompile Include="mnist.cu" />
-    <CudaCompile Include="network.cu" />
-    <CudaCompile Include="pooling.cu" />
-    <CudaCompile Include="softmax.cu" />
+    <CudaCompile Include="layers\activation.cu" />
+    <CudaCompile Include="layers\conv2d.cu" />
+    <CudaCompile Include="layers\dense.cu" />
+    <CudaCompile Include="layers\layer.cu" />
+    <CudaCompile Include="layers\pooling.cu" />
+    <CudaCompile Include="layers\softmax.cu" />
+    <CudaCompile Include="network\network.cu" />
     <CudaCompile Include="train.cu" />
+    <CudaCompile Include="utility\loss.cu" />
+    <CudaCompile Include="utility\mnist.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="activation.cuh" />
-    <ClInclude Include="conv2d.cuh" />
-    <ClInclude Include="dense.cuh" />
-    <ClInclude Include="helper.cuh" />
-    <ClInclude Include="layer.cuh" />
-    <ClInclude Include="loss.cuh" />
-    <ClInclude Include="mnist.cuh" />
-    <ClInclude Include="network.cuh" />
-    <ClInclude Include="pooling.cuh" />
-    <ClInclude Include="softmax.cuh" />
+    <ClInclude Include="layers\activation.cuh" />
+    <ClInclude Include="layers\conv2d.cuh" />
+    <ClInclude Include="layers\dense.cuh" />
+    <ClInclude Include="layers\layer.cuh" />
+    <ClInclude Include="layers\pooling.cuh" />
+    <ClInclude Include="layers\softmax.cuh" />
+    <ClInclude Include="network\network.cuh" />
+    <ClInclude Include="utility\blob.cuh" />
+    <ClInclude Include="utility\helper.cuh" />
+    <ClInclude Include="utility\loss.cuh" />
+    <ClInclude Include="utility\mnist.cuh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,9 +5,9 @@
 #include <cublas_v2.h>
 #include <cudnn.h>
 
-#include "blob.cuh"
-#include "loss.cuh"
-#include "helper.cuh"
+#include "../utility/blob.cuh"
+#include "../utility/loss.cuh"
+#include "../utility/helper.cuh"
 
 namespace cudl
 {

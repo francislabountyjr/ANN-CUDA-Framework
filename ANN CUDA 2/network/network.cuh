@@ -4,9 +4,9 @@
 #include <iomanip>
 #include <nvtx3/nvToolsExt.h>
 
-#include "helper.cuh"
-#include "loss.cuh"
-#include "layer.cuh"
+#include "../utility/helper.cuh"
+#include "../utility/loss.cuh"
+#include "../layers/layer.cuh"
 
 namespace cudl
 {

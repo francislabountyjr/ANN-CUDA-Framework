@@ -2,13 +2,13 @@
 #include <cuda_profiler_api.h>
 #include <nvtx3/nvToolsExt.h>
 
-#include "mnist.cuh"
-#include "network.cuh"
-#include "dense.cuh"
-#include "activation.cuh"
-#include "softmax.cuh"
-#include "conv2d.cuh"
-#include "pooling.cuh"
+#include "utility/mnist.cuh"
+#include "network/network.cuh"
+#include "layers/dense.cuh"
+#include "layers/activation.cuh"
+#include "layers/softmax.cuh"
+#include "layers/conv2d.cuh"
+#include "layers/pooling.cuh"
 
 using namespace cudl;
 

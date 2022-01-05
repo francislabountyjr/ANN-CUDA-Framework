@@ -1,69 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CudaCompile Include="layer.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-    <CudaCompile Include="dense.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-    <CudaCompile Include="activation.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-    <CudaCompile Include="softmax.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-    <CudaCompile Include="blob.cuh">
-      <Filter>utility</Filter>
-    </CudaCompile>
-    <CudaCompile Include="loss.cu">
-      <Filter>utility</Filter>
-    </CudaCompile>
-    <CudaCompile Include="mnist.cu">
-      <Filter>utility</Filter>
-    </CudaCompile>
-    <CudaCompile Include="network.cu">
-      <Filter>network</Filter>
-    </CudaCompile>
     <CudaCompile Include="train.cu" />
-    <CudaCompile Include="conv2d.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-    <CudaCompile Include="pooling.cu">
-      <Filter>layer</Filter>
-    </CudaCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="dense.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
-    <ClInclude Include="layer.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
-    <ClInclude Include="activation.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
-    <ClInclude Include="softmax.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
-    <ClInclude Include="helper.cuh">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="loss.cuh">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="mnist.cuh">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="network.cuh">
-      <Filter>network</Filter>
-    </ClInclude>
-    <ClInclude Include="conv2d.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
-    <ClInclude Include="pooling.cuh">
-      <Filter>layer</Filter>
-    </ClInclude>
+    <CudaCompile Include="utility\mnist.cu" />
+    <CudaCompile Include="utility\loss.cu" />
+    <CudaCompile Include="network\network.cu" />
+    <CudaCompile Include="layers\softmax.cu" />
+    <CudaCompile Include="layers\pooling.cu" />
+    <CudaCompile Include="layers\layer.cu" />
+    <CudaCompile Include="layers\dense.cu" />
+    <CudaCompile Include="layers\conv2d.cu" />
+    <CudaCompile Include="layers\activation.cu" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="layer">
@@ -75,5 +22,18 @@
     <Filter Include="network">
       <UniqueIdentifier>{ac19b152-9721-43ea-b4f7-19b86e73fb17}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility\mnist.cuh" />
+    <ClInclude Include="utility\blob.cuh" />
+    <ClInclude Include="utility\helper.cuh" />
+    <ClInclude Include="utility\loss.cuh" />
+    <ClInclude Include="network\network.cuh" />
+    <ClInclude Include="layers\softmax.cuh" />
+    <ClInclude Include="layers\pooling.cuh" />
+    <ClInclude Include="layers\layer.cuh" />
+    <ClInclude Include="layers\dense.cuh" />
+    <ClInclude Include="layers\conv2d.cuh" />
+    <ClInclude Include="layers\activation.cuh" />
   </ItemGroup>
 </Project>
