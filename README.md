@@ -10,4 +10,4 @@ Instructions:
 
 *Network will be sequential. Look at train.cu for an example of how to set up the network architecture.
 
-**If you're looking for a graph based network and/or a python implementation, look for "ANN CUDA Framework Pybind11" in my repositories.
+**If you're looking for a graph based network and/or a python implementation, https://github.com/francislabountyjr/ANN-CUDA-Pybind11
